@@ -145,7 +145,7 @@ C:\mingw64\bin
 
 прочитав официальный [VS Code C++ гайд](https://code.visualstudio.com/docs/cpp/config-mingw), вы наткнётесь на видео:
 
-![видео](https://youtu.be/oC69vlWofJQ)
+- _тут должен быть предпросмотр, но его сломал github [видео](https://youtu.be/oC69vlWofJQ)_
 
 и в офф. гайде основным способом предлагают делать через ucrt64, может быть оно и правильнее, но у меня не завелось, так что даже в статье есть команда
 
@@ -442,7 +442,7 @@ There you can also find out where I got the mingw64 folder from, and what msys h
 
 After reading the official [VS Code C++ guide](https://code.visualstudio.com/docs/cpp/config-mingw), you’ll encounter a video:
 
-![видео](https://youtu.be/oC69vlWofJQ)
+- _here must be prewatch, but github ate it [видео](https://youtu.be/oC69vlWofJQ)_
 
 And in the official guide the main recommended method uses ucrt64 — maybe it’s even better — but it didn’t work for me. So even in the article there is a command
 
