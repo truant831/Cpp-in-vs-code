@@ -156,6 +156,8 @@ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 для установки компилятора через mingw64, что я вам и предлагаю сделать.
 _Что бы запустить команду, вам необходимо установить [MSYS](https://github.com/msys2/msys2-installer/releases/download/2025-08-30/msys2-x86_64-20250830.exe)._
 
+Так же нужно обновить путь до компилятора файлах конфигурации проекта (папка `.vscode`)
+
 ---
 
 ## 10. Python!
@@ -453,6 +455,8 @@ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 to install the compiler through mingw64, which I recommend you do.
 
 _To run the command, you need to install [MSYS](https://github.com/msys2/msys2-installer/releases/download/2025-08-30/msys2-x86_64-20250830.exe)._
+
+Also dont forget update path to new compiler in config folder of your project (to be exactly `.vscode`)
 
 ---
 
