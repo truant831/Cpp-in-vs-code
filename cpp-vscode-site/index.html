@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гайд по C++ и Python в VS Code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">C++ Guide</div>
+      <div class="nav-links">
+        <a href="#about">О проекте</a>
+        <a href="#steps">Шаги</a>
+        <a href="#python">Python</a>
+        <a href="#problems">Проблемы</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-text">
+        <p class="badge">VS Code · C++ · Python · MinGW</p>
+        <h1>Настрой C++ и Python в Visual Studio Code без лишней боли</h1>
+        <p>
+          Простая инструкция для Windows: установка компилятора, настройка переменных среды,
+          импорт профиля VS Code и запуск первого тестового проекта.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="https://github.com/truant831/Cpp-in-vs-code" target="_blank">Открыть GitHub</a>
+          <a class="btn secondary" href="#steps">Начать настройку</a>
+        </div>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-top">
+          <span></span><span></span><span></span>
+        </div>
+<pre><code>C:\mingw64\bin
+
+g++ test.cpp -o test.exe
+./test.exe
+
+print("Python тоже готов!")</code></pre>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-title">
+        <p class="badge">Что это такое</p>
+        <h2>Готовый стартовый набор для новичка</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Компилятор C++</h3>
+          <p>Инструкция показывает, куда положить папку <b>mingw64</b> и какой путь добавить в системную переменную <b>Path</b>.</p>
+        </article>
+        <article class="card">
+          <h3>Профиль VS Code</h3>
+          <p>В репозитории есть файл профиля <b>C++.code-profile</b>, который помогает быстро подключить нужные расширения.</p>
+        </article>
+        <article class="card">
+          <h3>Тестовый проект</h3>
+          <p>Внутри лежит простой C++ пример с <b>input.txt</b> и <b>output.txt</b>, чтобы сразу проверить запуск.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="steps" class="section dark-block">
+      <div class="section-title">
+        <p class="badge">Быстрый старт</p>
+        <h2>Основные шаги настройки</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="step">
+          <span>01</span>
+          <div>
+            <h3>Скачать архив и распаковать mingw64</h3>
+            <p>Папку <b>mingw64</b> нужно перенести в корень диска, чтобы путь был <code>C:\mingw64</code>.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>02</span>
+          <div>
+            <h3>Перенести проект</h3>
+            <p>Папку проекта лучше хранить по пути без русских букв. Например: <code>C:\projects\cpp_start</code>.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>03</span>
+          <div>
+            <h3>Добавить компилятор в Path</h3>
+            <p>В переменные среды Windows добавить новый путь: <code>C:\mingw64\bin</code>.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>04</span>
+          <div>
+            <h3>Установить VS Code</h3>
+            <p>После установки открыть проект и импортировать готовый профиль расширений.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span>05</span>
+          <div>
+            <h3>Запустить тестовую программу</h3>
+            <p>Нажать кнопку запуска в VS Code и проверить, что программа читает данные и создаёт результат.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="python" class="section split">
+      <div>
+        <p class="badge">Python</p>
+        <h2>Python тоже можно настроить быстро</h2>
+        <p>
+          Для Python достаточно скачать установщик с официального сайта, запустить его
+          и обязательно поставить галочку <b>Add python.exe to PATH</b>.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Главное правило</h3>
+        <p>
+          Если Python или C++ не запускается из терминала, чаще всего проблема в переменной
+          <b>Path</b> или в пути к проекту.
+        </p>
+      </div>
+    </section>
+
+    <section id="problems" class="section">
+      <div class="section-title">
+        <p class="badge">FAQ</p>
+        <h2>Частые проблемы</h2>
+      </div>
+
+      <div class="faq-grid">
+        <details open>
+          <summary>Почему лучше не использовать русские буквы в пути?</summary>
+          <p>Из-за кодировок и особенностей отладчика VS Code пути с кириллицей могут вызывать странные ошибки.</p>
+        </details>
+
+        <details>
+          <summary>Что делать, если breakpoints игнорируются?</summary>
+          <p>Попробуйте упростить файл, убрать лишний код, создать новую папку и скопировать туда настроенную папку <b>.vscode</b>.</p>
+        </details>
+
+        <details>
+          <summary>Что делать, если пропала кнопка запуска?</summary>
+          <p>Проверьте расширения VS Code или создайте новый профиль расширений.</p>
+        </details>
+
+        <details>
+          <summary>Что делать, если переменные не видны в отладке?</summary>
+          <p>Можно добавить нужную переменную в Watch через контекстное меню в режиме отладки.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Готов начать?</h2>
+      <p>Открой репозиторий, скачай файлы и пройди настройку по шагам.</p>
+      <a class="btn primary" href="https://github.com/truant831/Cpp-in-vs-code" target="_blank">Перейти к репозиторию</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Сайт создан на основе GitHub-репозитория truant831/Cpp-in-vs-code.</p>
+  </footer>
+</body>
+</html>
